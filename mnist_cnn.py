@@ -106,7 +106,7 @@ def main(unused_argv):
                                                         num_epochs=None,
                                                         shuffle=True)
 
-    mnist_classifier.train(input_fn=train_input_fn, steps=15000)
+    #mnist_classifier.train(input_fn=train_input_fn, steps=15000)
 
     eval_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data},
                                                        y=eval_labels,
